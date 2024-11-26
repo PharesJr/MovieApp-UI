@@ -7,7 +7,7 @@ import PlayAndShuffle from "@/components/PlayAndShuffle";
 import Track from "@/components/Track";
 import data from "../../assets/data/library.json";
 
-const home = () => {
+const HomePage = () => {
   return (
     <SafeAreaView className="bg-[#fbedd6] flex-1 px-4">
       <View className="pt-4">
@@ -44,4 +44,4 @@ const home = () => {
   );
 };
 
-export default home;
+export default HomePage;
