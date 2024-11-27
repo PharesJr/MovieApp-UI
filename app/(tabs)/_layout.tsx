@@ -15,8 +15,7 @@ const TabsLayout = () => {
           tabBarPosition: "bottom",
           tabBarStyle: {
             justifyContent: "space-evenly",
-            backgroundColor: "#2b211b",
-            borderTopColor: "#2b211b",
+            backgroundColor: "#282828",
             borderWidth: 0,
             padding: 10,
             height: 55,

@@ -6,13 +6,16 @@ const Track = ({
   name,
   title,
   image,
+  onPress,
 }: {
   name: string;
   title: string;
   image: string;
+  onPress: () => void;
 }) => {
   return (
     <TouchableOpacity
+      onPress={onPress}
       activeOpacity={0.8}
       className="flex-row items-center justify-between gap-2"
     >
@@ -26,11 +29,11 @@ const Track = ({
       {/* Item 2 */}
 
       <View className="flex-1 py-3">
-        <Text className="text-md text-[#2b211b] font-semibold">{title}</Text>
-        <Text className="text-md text-[#2b211b] font-semibold">{name}</Text>
+        <Text className="text-md text-[#193497] font-bold">{title}</Text>
+        <Text className="text-md text-[#282828] font-semibold">{name}</Text>
       </View>
 
-      <FontAwesome5 name="ellipsis-h" size={20} color="#2b211b" />
+      <FontAwesome5 name="ellipsis-h" size={20} color="#282828" />
     </TouchableOpacity>
   );
 };

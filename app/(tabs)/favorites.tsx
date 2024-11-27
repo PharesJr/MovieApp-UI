@@ -3,7 +3,7 @@ import React from "react";
 import { StatusBar } from "expo-status-bar";
 import { SafeAreaView } from "react-native-safe-area-context";
 
-const favorites = () => {
+const Favorites = () => {
   return (
     <SafeAreaView className="bg-[#fbedd6] flex-1">
       <Text>Favorites</Text>
@@ -13,4 +13,4 @@ const favorites = () => {
   );
 };
 
-export default favorites;
+export default Favorites;

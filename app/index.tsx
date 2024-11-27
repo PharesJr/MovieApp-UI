@@ -1,9 +1,8 @@
-import { SafeAreaView } from "react-native-safe-area-context";
 import { useEffect, useState } from "react";
 import Splash from "@/components/Splash";
-import HomePage from "./(tabs)/home";
+import { Redirect } from "expo-router";
 
-export default function Index() {
+const index = () => {
   const [showSplash, setShowSplash] = useState(true); //splash screen state
 
   useEffect(() => {
@@ -14,6 +13,7 @@ export default function Index() {
     // Cleanup the timeout when the component unmounts
     return () => clearTimeout(timeout);
   }, []);
+  return showSplash ? <Splash /> : <Redirect href="/home" />;
+};
 
-  return showSplash ? <Splash /> : <HomePage />;
-}
+export default index;

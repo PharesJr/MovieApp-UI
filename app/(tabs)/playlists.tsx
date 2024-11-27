@@ -3,7 +3,7 @@ import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { StatusBar } from "expo-status-bar";
 
-const playlists = () => {
+const Playlists = () => {
   return (
     <SafeAreaView className="bg-[#fbedd6] flex-1">
       <Text>Playlists</Text>
@@ -13,4 +13,4 @@ const playlists = () => {
   );
 };
 
-export default playlists;
+export default Playlists;

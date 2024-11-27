@@ -7,16 +7,16 @@ const SearchInput = () => {
   const [query, setQuery] = useState("");
   return (
     <View
-      className={`w-full h-14 p-1 gap-2 text-base bg-[#2b211b] rounded-2xl flex-row items-center space-x-4 ${
+      className={`w-full h-14 p-1 gap-2 text-base bg-[#282828] rounded-2xl flex-row items-center space-x-4 ${
         isFocused ? "border-2 border-[#fbdfa2]" : "border-2 border-[#452216]"
       }`}
     >
-      <FontAwesome name="search" size={24} color="#b78456" className="pl-4" />
+      <FontAwesome name="search" size={24} color="#eda398" className="pl-4" />
       <TextInput
-        className="flex-1 text-white font-pregular text-base mt-0.5"
+        className="flex-1 text-[#f9f6ef] font-semibold text-base mt-0.5"
         value={query}
         placeholder={`Search a song `}
-        placeholderTextColor="#b78456"
+        placeholderTextColor="#eda398"
         onChangeText={(e) => setQuery(e)}
         onFocus={() => setIsFocused(true)} // Set focus state
         onBlur={() => setIsFocused(false)} // Reset focus state
