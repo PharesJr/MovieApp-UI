@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import Entypo from "@expo/vector-icons/Entypo";
 import MaterialIcons from "@expo/vector-icons/MaterialIcons";
+import { router } from "expo-router";
 
 const ArtistScreen = ({
   artist,
@@ -33,7 +34,10 @@ const ArtistScreen = ({
         {/* Item 2 */}
         <Text className="text-xl font-semibold text-[#282828]">Artist</Text>
         {/* Item 3 */}
-        <MaterialIcons name="library-music" size={30} color="#282828" />
+
+        <TouchableOpacity activeOpacity={0.7} onPress={() => router.push("/(tabs)/animated")}>
+          <MaterialIcons name="library-music" size={30} color="#282828" />
+        </TouchableOpacity>
       </View>
 
       <View className="bg-[#282828] w-20 rounded-full p-1"></View>
