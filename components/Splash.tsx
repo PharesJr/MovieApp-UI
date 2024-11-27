@@ -7,7 +7,7 @@ import images from "../constants/images";
 
 const Splash = () => {
   return (
-    <SafeAreaView className="bg-[#f7f3e3] flex-1 items-center justify-center">
+    <SafeAreaView className="bg-[#f7f3e3] flex-1 items-center justify-center p-4">
       <Image
         source={images.logoDark}
         resizeMode="contain"

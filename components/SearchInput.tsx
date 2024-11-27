@@ -2,7 +2,7 @@ import { View, Text, TextInput, Image } from "react-native";
 import React, { useState } from "react";
 import { FontAwesome } from "@expo/vector-icons";
 
-const SearchInput = () => {
+const SearchInput = ({ placeholder }: { placeholder: string }) => {
   const [isFocused, setIsFocused] = useState(false); // Manage focus state
   const [query, setQuery] = useState("");
   return (
@@ -15,7 +15,7 @@ const SearchInput = () => {
       <TextInput
         className="flex-1 text-[#f9f6ef] font-semibold text-base mt-0.5"
         value={query}
-        placeholder={`Search a song `}
+        placeholder={placeholder}
         placeholderTextColor="#eda398"
         onChangeText={(e) => setQuery(e)}
         onFocus={() => setIsFocused(true)} // Set focus state

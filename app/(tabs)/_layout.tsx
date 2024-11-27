@@ -10,8 +10,8 @@ const TabsLayout = () => {
       {/* Tabs */}
       <Tabs
         screenOptions={{
-          tabBarActiveTintColor: "#fbdfa2",
-          tabBarInactiveTintColor: "#b78456",
+          tabBarActiveTintColor: "#f9f6ef",
+          tabBarInactiveTintColor: "#eda398",
           tabBarPosition: "bottom",
           tabBarStyle: {
             justifyContent: "space-evenly",

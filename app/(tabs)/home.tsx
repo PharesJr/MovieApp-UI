@@ -21,13 +21,14 @@ const HomePage = () => {
     setSelectedTrack(track); // Set the selected track data
     setPopupVisible(true); // Show the popup
   };
+
   return (
     <SafeAreaView className="bg-[#f9f6ef] flex-1 px-4">
       <View className="pt-4">
         <Text className="text-[#282828] text-4xl font-bold py-2">Songs</Text>
 
         {/* Search Input */}
-        <SearchInput />
+        <SearchInput placeholder="Search for a song" />
       </View>
 
       <View className="pt-2">
@@ -50,7 +51,10 @@ const HomePage = () => {
           <Track
             name={item.artist || "Unknown Artist"}
             title={item.title || "Untitled"}
-            image={item.artwork || "https://f4.bcbits.com/img/a3736661212_65"}
+            image={
+              item.artwork ||
+              "https://i.ytimg.com/vi/JhUFfaArYk8/maxresdefault.jpg"
+            }
             onPress={() => togglePopup(item)} // Pass track data
           />
         )}
